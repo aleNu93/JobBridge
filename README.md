@@ -1,150 +1,153 @@
-# 🧩 JobBridge – Plataforma Digital de Servicios Freelance para PYMES
+# 🧩 JobBridge – Digital Freelance Services Platform for SMEs
 
-## 📌 Descripción General
-JobBridge es una plataforma digital diseñada para conectar freelancers locales, principalmente jóvenes profesionales, con pequeñas y medianas empresas (PYMES) que requieren servicios especializados de forma puntual, tales como diseño gráfico, programación, traducción y marketing digital.
+## 📌 General Description
+JobBridge is a digital platform designed to connect local freelancers, primarily young professionals, with small and medium-sized enterprises (SMEs) that require specialized services on a project basis, such as graphic design, software development, translation, and digital marketing.
 
-El objetivo central de la plataforma es **reducir el desempleo juvenil** y **fomentar oportunidades laborales flexibles**, mediante un ecosistema digital confiable, accesible y orientado a la contratación eficiente de servicios profesionales.
-
----
-
-## 🎯 Objetivo del Proyecto
-Diseñar, desarrollar e implementar una plataforma que permita:
-- A los **freelancers** ofrecer y gestionar sus servicios profesionales.
-- A las **PYMES** contratar servicios de manera segura y transparente.
-- Facilitar la comunicación, el seguimiento del trabajo, la simulación de pagos y la evaluación de la calidad del servicio.
+The central objective of the platform is to **reduce youth unemployment** and **promote flexible employment opportunities** through a reliable, accessible digital ecosystem focused on the efficient hiring of professional services.
 
 ---
 
-## 📊 Alineación con PMBOK® Guide
-El proyecto JobBridge se encuentra alineado con el estándar **PMBOK® Guide del Project Management Institute (PMI)**, integrando:
+## 🎯 Project Objective
+To design, develop, and implement a platform that enables:
 
-### 🧠 Grupos de Procesos
-- Inicio  
-- Planificación  
-- Ejecución  
-- Monitoreo y Control  
-- Cierre  
-
-### 📐 Áreas de Conocimiento
-- Integración  
-- Alcance  
-- Cronograma  
-- Costos  
-- Calidad  
-- Recursos  
-- Comunicaciones  
-- Riesgos  
-- Adquisiciones  
-- Gestión de los interesados  
-
-Esta alineación permite una gestión estructurada del proyecto, orientada a la calidad, el control de riesgos y la correcta coordinación de los actores involucrados.
+- **Freelancers** to offer and manage their professional services.  
+- **SMEs** to hire services in a secure and transparent manner.  
+- Structured communication, task tracking, payment simulation, and service quality evaluation.
 
 ---
 
-## 👥 Usuarios del Sistema
-La plataforma contempla **dos tipos de usuarios**:
+## 📊 Alignment with the PMBOK® Guide
+The JobBridge project is aligned with the **PMBOK® Guide of the Project Management Institute (PMI)**, incorporating a structured and disciplined project management approach.
+
+### 🧠 Process Groups
+- Initiating  
+- Planning  
+- Executing  
+- Monitoring and Controlling  
+- Closing  
+
+### 📐 Knowledge Areas
+- Integration Management  
+- Scope Management  
+- Schedule Management  
+- Cost Management  
+- Quality Management  
+- Resource Management  
+- Communications Management  
+- Risk Management  
+- Procurement Management  
+- Stakeholder Management  
+
+This alignment ensures systematic planning, risk control, quality assurance, and effective stakeholder coordination throughout the project lifecycle.
+
+---
+
+## 👥 System Users
+The platform includes **two primary user roles**:
 
 ### 🧑‍💻 Freelancer
-- Publica y administra servicios profesionales.
-- Recibe y gestiona solicitudes de contratación.
-- Actualiza el estado de los trabajos asignados.
-- Visualiza calificaciones y reseñas recibidas.
+- Publish and manage professional services.  
+- Receive and manage hiring requests.  
+- Update the status of assigned work.  
+- View ratings and reviews.  
 
-### 🏢 Cliente (PYME)
-- Explora y busca servicios disponibles.
-- Contrata servicios profesionales de forma puntual.
-- Da seguimiento a las contrataciones.
-- Califica los servicios y freelancers una vez finalizados.
-
----
-
-## ⚙️ Funcionalidades Principales
-
-### 🔐 Autenticación y Usuarios
-- Registro de usuarios con selección de rol (Freelancer o Cliente).
-- Inicio de sesión mediante correo electrónico.
-- Gestión de perfiles de usuario.
-- Control de acceso basado en roles.
-
-### 🧰 Gestión de Servicios
-- Creación, edición y desactivación de servicios por parte del freelancer.
-- Clasificación de servicios por áreas.
-- Definición de precios, unidades de cobro y vigencia.
-
-### 🔍 Búsqueda y Exploración
-- Catálogo de servicios disponibles.
-- Búsqueda por palabra clave.
-- Filtros por área, precio y freelancer.
-
-### 🤝 Contratación de Servicios
-- Solicitud de contratación por parte del cliente.
-- Simulación del proceso de pago.
-- Registro de fechas de inicio y finalización del servicio.
-- Seguimiento del estado de la contratación.
-
-### 💬 Comunicación
-- Interacción entre freelancer y cliente asociada a cada contratación
-  (implementación conceptual o simulada).
-
-### ⭐ Calificaciones y Reseñas
-- Calificación del servicio una vez finalizado.
-- Comentarios asociados a la experiencia.
-- Promedios visibles en los perfiles de freelancers y servicios.
+### 🏢 Client (SME)
+- Browse and search available services.  
+- Hire professional services on demand.  
+- Track contracted services.  
+- Rate freelancers and services upon completion.  
 
 ---
 
-## 🗄️ Arquitectura de Datos
-El sistema utiliza una base de datos relacional compuesta por las siguientes entidades principales:
+## ⚙️ Core Features
 
-- Empresa
-- Usuario
-- Cliente
-- Freelancer
-- Área
-- Servicio
-- Servicio_Freelancer
-- Servicio_Precio
-- Servicio_Contratado
-- Calificación
+### 🔐 Authentication and User Management
+- User registration with role selection (Freelancer or Client).  
+- Email-based login.  
+- User profile management.  
+- Role-based access control.  
 
-El diseño garantiza:
-- Integridad referencial.
-- Historial de precios.
-- Trazabilidad de contrataciones.
-- Separación entre autenticación y perfiles de usuario.
+### 🧰 Service Management
+- Creation, editing, and deactivation of services by freelancers.  
+- Service categorization by professional areas.  
+- Definition of pricing, billing units, and service validity.  
 
----
+### 🔍 Search and Discovery
+- Service catalog.  
+- Keyword-based search functionality.  
+- Filters by category, price range, and freelancer.  
 
-## 🛠️ Tecnologías Utilizadas
-- **Base de datos:** SQL Server (T-SQL)
-- **Arquitectura:** Modelo relacional normalizado
-- **Gestión del proyecto:** PMBOK® Guide (PMI)
-- **Plataforma:** Aplicación web (enfoque académico)
+### 🤝 Service Contracting
+- Service request submission by clients.  
+- Payment process simulation.  
+- Registration of service start and completion dates.  
+- Contract status tracking.  
 
----
+### 💬 Communication
+- Interaction between freelancer and client linked to each contract  
+  (conceptual or simulated implementation).  
 
-## 📦 Alcance del Proyecto
-Este proyecto corresponde a una **implementación académica**, por lo que:
-- Los pagos son simulados.
-- No se procesan transacciones financieras reales.
-- La seguridad se aborda a nivel conceptual (hash de contraseñas y control de roles).
+### ⭐ Ratings and Reviews
+- Service rating upon completion.  
+- Written feedback associated with the experience.  
+- Average ratings displayed on freelancer profiles and services.  
 
 ---
 
-## 🤝 Interesados Clave
-- Freelancers locales (jóvenes profesionales).
-- PYMES y microempresas.
-- Equipo de desarrollo tecnológico.
-- Inversionistas y entidades de apoyo al empleo juvenil.
+## 🗄️ Data Architecture
+The system is built on a relational database model composed of the following main entities:
+
+- Company  
+- User  
+- Client  
+- Freelancer  
+- Area  
+- Service  
+- Freelancer_Service  
+- Service_Pricing  
+- Contracted_Service  
+- Rating  
+
+The database design ensures:
+
+- Referential integrity.  
+- Price history management.  
+- Contract traceability.  
+- Clear separation between authentication data and user profile information.  
 
 ---
 
-## 🏁 Conclusión
-JobBridge representa una solución digital orientada al fortalecimiento del empleo juvenil y al apoyo de las PYMES, alineada con buenas prácticas de gestión de proyectos y con un enfoque social claro.
-
-El proyecto integra diseño de bases de datos, análisis funcional y gestión de proyectos, cumpliendo con los requerimientos académicos y técnicos establecidos.
+## 🛠️ Technologies Used
+- **Database:** SQL Server (T-SQL)  
+- **Architecture:** Normalized relational data model  
+- **Project Management Framework:** PMBOK® Guide (PMI)  
+- **Platform Type:** Web application (academic implementation)  
 
 ---
 
-## 👨‍🎓 Autor
-Proyecto académico desarrollado como parte de un curso universitario en el área de Ingeniería / Sistemas de Información.
+## 📦 Project Scope
+This project corresponds to an **academic implementation**, therefore:
+
+- Payments are simulated.  
+- No real financial transactions are processed.  
+- Security measures are addressed conceptually, including password hashing and role-based access control.  
+
+---
+
+## 🤝 Key Stakeholders
+- Local freelancers, primarily young professionals.  
+- SMEs and micro-enterprises.  
+- The development team.  
+- Potential investors and institutions supporting youth employment initiatives.  
+
+---
+
+## 🏁 Conclusion
+JobBridge represents a digital solution aimed at strengthening youth employment and supporting SMEs through accessible professional services. The project integrates database design, functional analysis, and structured project management practices.
+
+It fulfills both academic and technical requirements while demonstrating the practical application of information systems engineering and project management standards.
+
+---
+
+## 👨‍🎓 Author
+Academic project developed as part of a university course in Engineering / Information Systems.
