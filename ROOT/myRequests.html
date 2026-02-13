@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JobBridge | Solicitudes</title>
+    <link rel="stylesheet" href="../CSS/main.css" />
+  </head>
+
+  <body class="role-freelancer">
+    <div class="app-shell">
+      <!-- Sidebar -->
+      <aside class="sidebar" aria-label="Menú lateral">
+        <div class="sidebar-inner">
+          <div class="brand">
+            <div class="brand-logo brand-logo--plain" aria-hidden="true">
+              <img src="../IMAGES/JobBridgeLogo.png" alt="" />
+            </div>
+
+            <div class="brand-title">
+              <strong>JobBridge</strong>
+              <span>Panel Freelancer</span>
+            </div>
+
+            <button class="sidebar-toggle" type="button" aria-label="Colapsar sidebar">☰</button>
+          </div>
+
+          <nav class="nav" aria-label="Navegación principal">
+            <div class="nav-section-title">Principal</div>
+
+            <a class="nav-item" href="dashboardFreelancer.html">
+              <span class="nav-icon" aria-hidden="true">🏠</span>
+              <span class="nav-text">
+                <strong>Dashboard</strong>
+                <span>Resumen de actividad</span>
+              </span>
+            </a>
+
+            <a class="nav-item" href="myServices.html">
+              <span class="nav-icon" aria-hidden="true">🧰</span>
+              <span class="nav-text">
+                <strong>Mis servicios</strong>
+                <span>Publicados y borradores</span>
+              </span>
+            </a>
+
+            <a class="nav-item active" href="myRequests.html" aria-current="page">
+              <span class="nav-icon" aria-hidden="true">📥</span>
+              <span class="nav-text">
+                <strong>Solicitudes</strong>
+                <span>Entrantes y estado</span>
+              </span>
+            </a>
+
+            <a class="nav-item" href="myContracts.html">
+              <span class="nav-icon" aria-hidden="true">📄</span>
+              <span class="nav-text">
+                <strong>Contratos</strong>
+                <span>Activos e historial</span>
+              </span>
+            </a>
+
+            <a class="nav-item" href="profile.html">
+              <span class="nav-icon" aria-hidden="true">👤</span>
+              <span class="nav-text">
+                <strong>Perfil</strong>
+                <span>Datos y portafolio</span>
+              </span>
+            </a>
+          </nav>
+
+          <div class="sidebar-footer" aria-label="Usuario">
+            <div class="user-pill">
+              <div class="avatar" aria-hidden="true"></div>
+              <div class="user-meta">
+                <strong>Freelancer Demo</strong>
+                <span>Freelancer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main -->
+      <div class="main">
+        <header class="topbar" aria-label="Barra superior">
+          <div class="topbar-left">
+            <div class="page-title">
+              <h1>Solicitudes</h1>
+              <p>Revisa solicitudes entrantes y su estado</p>
+            </div>
+          </div>
+
+          <div class="topbar-right">
+            <a class="btn btn-secondary btn-sm" href="myServices.html">Ver servicios</a>
+          </div>
+        </header>
+
+        <main class="content">
+          <div class="inline" style="margin-bottom: 12px">
+            <p class="muted">Solicitudes de ejemplo.</p>
+            <span class="badge">Entrantes</span>
+          </div>
+
+          <div class="grid" style="gap: 14px">
+            <article class="panel">
+              <div class="stack-12">
+                <div class="inline">
+                  <div>
+                    <strong>Empresa TechNova</strong>
+                    <p class="muted" style="font-size: 12px">Solicita desarrollo de landing page corporativa.</p>
+                  </div>
+                  <span class="badge warning">Pendiente</span>
+                </div>
+
+                <div class="service-meta">
+                  <span class="pill">Servicio: Landing page</span>
+                  <span class="pill">Presupuesto: $280</span>
+                  <span class="pill">Plazo: 7 días</span>
+                </div>
+
+                <div class="inline" style="justify-content: flex-end; gap: 10px; flex-wrap: wrap">
+                  <a class="btn btn-secondary btn-sm" href="#">Rechazar</a>
+                  <a class="btn btn-primary btn-sm" href="#">Aceptar</a>
+                </div>
+
+                <p class="help">
+                  Nota: aceptar o rechazar se implementará en el flujo de contratación.
+                </p>
+              </div>
+            </article>
+
+            <article class="panel">
+              <div class="stack-12">
+                <div class="inline">
+                  <div>
+                    <strong>Startup MarketPro</strong>
+                    <p class="muted" style="font-size: 12px">Campaña de marketing digital mensual.</p>
+                  </div>
+                  <span class="badge info">En proceso</span>
+                </div>
+
+                <div class="service-meta">
+                  <span class="pill">Servicio: Marketing mensual</span>
+                  <span class="pill">Presupuesto: $190</span>
+                  <span class="pill">Estado: coordinación</span>
+                </div>
+
+                <div class="inline" style="justify-content: flex-end; gap: 10px; flex-wrap: wrap">
+                  <a class="btn btn-ghost btn-sm" href="#">Ver detalle</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

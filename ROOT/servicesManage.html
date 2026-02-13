@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JobBridge | Mis servicios</title>
+    <link rel="stylesheet" href="../CSS/main.css" />
+  </head>
+
+  <body class="role-freelancer">
+    <div class="app-shell">
+      <!-- Sidebar -->
+      <aside class="sidebar" aria-label="Menú lateral">
+        <div class="sidebar-inner">
+          <div class="brand">
+            <div class="brand-logo brand-logo--plain" aria-hidden="true">
+              <img src="../IMAGES/JobBridgeLogo.png" alt="" />
+            </div>
+
+            <div class="brand-title">
+              <strong>JobBridge</strong>
+              <span>Panel Freelancer</span>
+            </div>
+
+            <button class="sidebar-toggle" type="button" aria-label="Colapsar sidebar">☰</button>
+          </div>
+
+          <nav class="nav" aria-label="Navegación principal">
+            <div class="nav-section-title">Principal</div>
+
+            <a class="nav-item" href="dashboardFreelancer.html">
+              <span class="nav-icon" aria-hidden="true">🏠</span>
+              <span class="nav-text">
+                <strong>Dashboard</strong>
+                <span>Resumen de actividad</span>
+              </span>
+            </a>
+
+            <a class="nav-item active" href="myServices.html" aria-current="page">
+              <span class="nav-icon" aria-hidden="true">🧰</span>
+              <span class="nav-text">
+                <strong>Mis servicios</strong>
+                <span>Publicados y borradores</span>
+              </span>
+            </a>
+
+            <a class="nav-item" href="myRequests.html">
+              <span class="nav-icon" aria-hidden="true">📥</span>
+              <span class="nav-text">
+                <strong>Solicitudes</strong>
+                <span>Entrantes y estado</span>
+              </span>
+            </a>
+
+            <a class="nav-item" href="myContracts.html">
+              <span class="nav-icon" aria-hidden="true">📄</span>
+              <span class="nav-text">
+                <strong>Contratos</strong>
+                <span>Activos e historial</span>
+              </span>
+            </a>
+
+            <a class="nav-item" href="profile.html">
+              <span class="nav-icon" aria-hidden="true">👤</span>
+              <span class="nav-text">
+                <strong>Perfil</strong>
+                <span>Datos y portafolio</span>
+              </span>
+            </a>
+          </nav>
+
+          <div class="sidebar-footer" aria-label="Usuario">
+            <div class="user-pill">
+              <div class="avatar" aria-hidden="true"></div>
+              <div class="user-meta">
+                <strong>Freelancer Demo</strong>
+                <span>Freelancer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main -->
+      <div class="main">
+        <header class="topbar" aria-label="Barra superior">
+          <div class="topbar-left">
+            <div class="page-title">
+              <h1>Mis servicios</h1>
+              <p>Gestiona tus publicaciones y disponibilidad</p>
+            </div>
+          </div>
+
+          <div class="topbar-right">
+            <a class="btn btn-primary btn-sm" href="createService.html">Nuevo servicio</a>
+          </div>
+        </header>
+
+        <main class="content">
+          <div class="inline" style="margin-bottom: 12px">
+            <p class="muted">Listado de ejemplo.</p>
+            <span class="badge">Servicios</span>
+          </div>
+
+          <div class="grid" style="grid-template-columns: repeat(2, 1fr); gap: 14px">
+            <article class="service-card">
+              <div class="service-head">
+                <h3>Diseño de páginas web</h3>
+                <span class="price">$300</span>
+              </div>
+
+              <div class="service-meta">
+                <span class="pill">Programación</span>
+                <span class="pill">Entrega: 7 días</span>
+                <span class="pill">Activo</span>
+              </div>
+
+              <p class="muted">Creación de sitios modernos y responsivos.</p>
+
+              <div class="inline">
+                <span class="badge success">Publicado</span>
+                <div style="display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end">
+                  <a class="btn btn-secondary btn-sm" href="serviceDetail.html">Ver</a>
+                  <a class="btn btn-ghost btn-sm" href="#">Editar</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div class="service-head">
+                <h3>Gestión de redes sociales</h3>
+                <span class="price">$200</span>
+              </div>
+
+              <div class="service-meta">
+                <span class="pill">Marketing</span>
+                <span class="pill">Paquete mensual</span>
+                <span class="pill">Activo</span>
+              </div>
+
+              <p class="muted">Estrategia de contenido y crecimiento orgánico.</p>
+
+              <div class="inline">
+                <span class="badge success">Publicado</span>
+                <div style="display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end">
+                  <a class="btn btn-secondary btn-sm" href="serviceDetail.html">Ver</a>
+                  <a class="btn btn-ghost btn-sm" href="#">Editar</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <p class="help" style="margin-top: 10px">
+            Nota: acciones como editar o pausar se conectarán después. Aquí solo está la estructura.
+          </p>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

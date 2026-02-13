@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JobBridge | Explorar servicios</title>
+    <link rel="stylesheet" href="../CSS/main.css" />
+  </head>
+
+  <body class="role-client">
+    <div class="app-shell">
+      <!-- Sidebar -->
+      <aside class="sidebar" aria-label="Menú lateral">
+        <div class="sidebar-inner">
+          <div class="brand">
+            <div class="brand-logo brand-logo--plain" aria-hidden="true">
+              <img src="../IMAGES/JobBridgeLogo.png" alt="" />
+            </div>
+
+            <div class="brand-title">
+              <strong>JobBridge</strong>
+              <span>Panel PYME</span>
+            </div>
+
+            <button class="sidebar-toggle" type="button" aria-label="Colapsar sidebar">
+              ☰
+            </button>
+          </div>
+
+          <nav class="nav" aria-label="Navegación principal">
+            <div class="nav-section-title">Principal</div>
+
+            <a class="nav-item" href="dashboardPYME.html">
+              <span class="nav-icon" aria-hidden="true">🏠</span>
+              <span class="nav-text">
+                <strong>Dashboard</strong>
+                <span>Resumen general</span>
+              </span>
+            </a>
+
+            <a class="nav-item active" href="exploreServices.html" aria-current="page">
+              <span class="nav-icon" aria-hidden="true">🔎</span>
+              <span class="nav-text">
+                <strong>Explorar servicios</strong>
+                <span>Catálogo disponible</span>
+              </span>
+            </a>
+
+            <a class="nav-item" href="myContracts.html">
+              <span class="nav-icon" aria-hidden="true">📄</span>
+              <span class="nav-text">
+                <strong>Mis contratos</strong>
+                <span>Activos e historial</span>
+              </span>
+            </a>
+
+            <a class="nav-item" href="ratings.html">
+              <span class="nav-icon" aria-hidden="true">⭐</span>
+              <span class="nav-text">
+                <strong>Calificaciones</strong>
+                <span>Tu experiencia</span>
+              </span>
+            </a>
+
+            <a class="nav-item" href="profile.html">
+              <span class="nav-icon" aria-hidden="true">👤</span>
+              <span class="nav-text">
+                <strong>Perfil</strong>
+                <span>Datos de la empresa</span>
+              </span>
+            </a>
+          </nav>
+
+          <div class="sidebar-footer" aria-label="Usuario">
+            <div class="user-pill">
+              <div class="avatar" aria-hidden="true"></div>
+              <div class="user-meta">
+                <strong>Empresa Demo</strong>
+                <span>PYME</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main -->
+      <div class="main">
+        <header class="topbar" aria-label="Barra superior">
+          <div class="topbar-left">
+            <div class="page-title">
+              <h1>Explorar servicios</h1>
+              <p>Encuentra freelancers y contrata por proyecto</p>
+            </div>
+          </div>
+
+          <div class="topbar-right">
+            <div class="search" role="search" aria-label="Buscar servicios">
+              <span aria-hidden="true">🔍</span>
+              <input type="search" placeholder="Buscar por título o palabra clave" />
+            </div>
+
+            <a class="btn btn-secondary btn-sm" href="myContracts.html">Ver contratos</a>
+          </div>
+        </header>
+
+        <main class="content">
+          <div class="grid services">
+            <!-- Filtros -->
+            <aside class="filters panel" aria-label="Filtros de búsqueda">
+              <div class="stack-16">
+                <div class="stack-8">
+                  <strong>Filtros</strong>
+                  <p class="muted">Ajusta la búsqueda según tus necesidades.</p>
+                </div>
+
+                <div class="field">
+                  <label class="label" for="area">Área</label>
+                  <select class="select" id="area" name="area">
+                    <option value="">Todas</option>
+                    <option>Diseño</option>
+                    <option>Programación</option>
+                    <option>Marketing</option>
+                    <option>Redacción</option>
+                    <option>Video</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label class="label" for="modalidad">Modalidad</label>
+                  <select class="select" id="modalidad" name="modalidad">
+                    <option value="">Cualquiera</option>
+                    <option>Por proyecto</option>
+                    <option>Por hora</option>
+                    <option>Paquete</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label class="label" for="presupuesto">Presupuesto máximo</label>
+                  <input class="input" id="presupuesto" name="presupuesto" type="number" placeholder="Ej: 250" />
+                  <p class="help">Moneda referencial según configuración del sistema.</p>
+                </div>
+
+                <div class="field">
+                  <label class="label" for="orden">Ordenar por</label>
+                  <select class="select" id="orden" name="orden">
+                    <option>Relevancia</option>
+                    <option>Mejor calificados</option>
+                    <option>Menor precio</option>
+                    <option>Mayor precio</option>
+                    <option>Más recientes</option>
+                  </select>
+                </div>
+
+                <div class="inline">
+                  <button class="btn btn-primary btn-sm" type="button">Aplicar</button>
+                  <button class="btn btn-ghost btn-sm" type="button">Limpiar</button>
+                </div>
+              </div>
+            </aside>
+
+            <!-- Lista -->
+            <section class="list" aria-label="Resultados">
+              <div class="inline" style="margin-bottom: 12px">
+                <p class="muted">Mostrando resultados de ejemplo.</p>
+                <span class="badge">Catálogo</span>
+              </div>
+
+              <div class="grid" style="gap: 14px">
+                <!-- Card 1 -->
+                <article class="service-card">
+                  <div class="service-head">
+                    <h3>Diseño de logotipo profesional</h3>
+                    <span class="price">$120</span>
+                  </div>
+
+                  <div class="service-meta">
+                    <span class="pill">Diseño</span>
+                    <span class="pill">Entrega: 3 días</span>
+                    <span class="pill">2 revisiones</span>
+                  </div>
+
+                  <p class="muted">
+                    Identidad visual clara y adaptable para redes, papelería y web.
+                  </p>
+
+                  <div class="inline">
+                    <div class="rating">
+                      <span class="star" aria-hidden="true"></span>
+                      <span>4.8 (56)</span>
+                    </div>
+
+                    <a class="btn btn-secondary btn-sm" href="serviceDetail.html">Ver detalle</a>
+                  </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="service-card">
+                  <div class="service-head">
+                    <h3>Landing page optimizada para conversión</h3>
+                    <span class="price">$280</span>
+                  </div>
+
+                  <div class="service-meta">
+                    <span class="pill">Programación</span>
+                    <span class="pill">Entrega: 7 días</span>
+                    <span class="pill">Responsive</span>
+                  </div>
+
+                  <p class="muted">
+                    Página rápida, clara y enfocada en leads con estructura modular.
+                  </p>
+
+                  <div class="inline">
+                    <div class="rating">
+                      <span class="star" aria-hidden="true"></span>
+                      <span>4.9 (31)</span>
+                    </div>
+
+                    <a class="btn btn-secondary btn-sm" href="serviceDetail.html">Ver detalle</a>
+                  </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="service-card">
+                  <div class="service-head">
+                    <h3>Gestión de redes sociales por 30 días</h3>
+                    <span class="price">$190</span>
+                  </div>
+
+                  <div class="service-meta">
+                    <span class="pill">Marketing</span>
+                    <span class="pill">Paquete mensual</span>
+                    <span class="pill">Calendario editorial</span>
+                  </div>
+
+                  <p class="muted">
+                    Planificación, diseño básico y publicaciones con métricas de seguimiento.
+                  </p>
+
+                  <div class="inline">
+                    <div class="rating">
+                      <span class="star" aria-hidden="true"></span>
+                      <span>4.7 (22)</span>
+                    </div>
+
+                    <a class="btn btn-secondary btn-sm" href="serviceDetail.html">Ver detalle</a>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

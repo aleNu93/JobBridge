@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JobBridge | Mensajes</title>
+  <link rel="stylesheet" href="../CSS/main.css" />
+</head>
+
+<body class="role-client"><!-- o role-freelancer -->
+  <div class="app-shell">
+
+    <!-- Sidebar -->
+    <aside class="sidebar" aria-label="Menú lateral">
+        <div class="sidebar-inner">
+          <div class="brand">
+            <div class="brand-logo brand-logo--plain" aria-hidden="true">
+              <img src="../IMAGES/JobBridgeLogo.png" alt="" />
+            </div>
+
+            <div class="brand-title">
+              <strong>JobBridge</strong>
+              <span>Panel PYME</span>
+            </div>
+
+            <button
+              class="sidebar-toggle"
+              type="button"
+              aria-label="Colapsar sidebar"
+            >
+              ☰
+            </button>
+          </div>
+
+          <nav class="nav" aria-label="Navegación principal">
+            <div class="nav-section-title">Principal</div>
+
+            <a class="nav-item" href="dashboardPYME.html">
+              <span class="nav-icon" aria-hidden="true">🏠</span>
+              <span class="nav-text">
+                <strong>Dashboard</strong>
+                <span>Resumen general</span>
+              </span>
+            </a>
+
+            <a
+              class="nav-item active"
+              href="exploreServices.html"
+              aria-current="page"
+            >
+              <span class="nav-icon" aria-hidden="true">🔎</span>
+              <span class="nav-text">
+                <strong>Explorar servicios</strong>
+                <span>Catálogo disponible</span>
+              </span>
+            </a>
+
+            <a class="nav-item" href="myContracts.html">
+              <span class="nav-icon" aria-hidden="true">📄</span>
+              <span class="nav-text">
+                <strong>Mis contratos</strong>
+                <span>Activos e historial</span>
+              </span>
+            </a>
+
+            <a class="nav-item" href="profile.html">
+              <span class="nav-icon" aria-hidden="true">👤</span>
+              <span class="nav-text">
+                <strong>Perfil</strong>
+                <span>Datos de la empresa</span>
+              </span>
+            </a>
+          </nav>
+
+          <div class="sidebar-footer" aria-label="Usuario">
+            <div class="user-pill">
+              <div class="avatar" aria-hidden="true"></div>
+              <div class="user-meta">
+                <strong>Empresa Demo</strong>
+                <span>PYME</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+
+    <!-- Main -->
+    <div class="main">
+
+      <header class="topbar">
+        <div class="page-title">
+          <h1>Mensajes</h1>
+          <p>Comunicación directa y segura</p>
+        </div>
+      </header>
+
+      <main class="content">
+        <!-- chat -->
+         <div class="grid" style="grid-template-columns: 0.9fr 1.6fr 0.7fr; gap:14px">
+            <section class="panel" aria-label="Conversaciones">
+                <strong>Conversaciones</strong>
+
+                <div class="stack-8">
+
+                    <!-- Conversación activa -->
+                    <div class="conversation active">
+                    <div
+                        style="
+                        display:flex;
+                        align-items:center;
+                        gap:8px;
+                        "
+                    >
+                        <div
+                        class="avatar"
+                        aria-hidden="true"
+                        style="flex-shrink:0"
+                        ></div>
+
+                        <div style="min-width:0">
+                        <div
+                            style="
+                            font-weight:600;
+                            line-height:1.2;
+                            white-space:nowrap;
+                            overflow:hidden;
+                            text-overflow:ellipsis;
+                            "
+                        >
+                            Alex Rivera
+                        </div>
+
+                        <div
+                            class="muted"
+                            style="
+                            font-size:12px;
+                            white-space:nowrap;
+                            overflow:hidden;
+                            text-overflow:ellipsis;
+                            "
+                        >
+                            Diseño de logotipo profesional
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+
+                    <!-- Otra conversación -->
+                    <div class="conversation">
+                    <div
+                        style="
+                        display:flex;
+                        align-items:center;
+                        gap:8px;
+                        "
+                    >
+                        <div class="avatar" aria-hidden="true"></div>
+
+                        <div style="min-width:0">
+                        <div style="font-weight:600;line-height:1.2">
+                            María López
+                        </div>
+                        <div class="muted" style="font-size:12px">
+                            Diseño para redes sociales
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+
+                </div>
+                </section>
+
+
+            <section class="panel" style="display:flex;flex-direction:column;height:100%">
+                <div class="inline" style="padding-bottom:8px;border-bottom:1px solid var(--border)">
+                <div class="avatar"></div>
+                <div>
+                    <strong>Alex Rivera</strong>
+                    <p class="muted" style="font-size:12px">Freelancer</p>
+                </div>
+                </div>
+            <div class="stack-8" style="flex:1;overflow-y:auto;padding-top:8px">
+
+                <div class="message received">
+                    Hola, ¿tienes disponibilidad esta semana?
+                </div>
+
+                <div class="message sent">
+                    Sí, puedo empezar mañana sin problema.
+                </div>
+
+                <div class="message received">
+                    Perfecto, ¿incluye revisiones?
+                </div>
+
+            </div>
+            <div class="inline" style="padding-top:8px;border-top:1px solid var(--border)">
+            <input
+                type="text"
+                placeholder="Escribe un mensaje…"
+                style="flex:1"
+            />
+            <button class="btn btn-primary btn-sm">Enviar</button>
+            </div>
+
+            <section class="panel">
+            <div class="stack-12">
+                <strong>Servicio</strong>
+
+                <div>
+                <p style="margin:0;font-weight:600">
+                    Diseño de logotipo profesional
+                </p>
+                <p class="muted" style="font-size:12px">
+                    Precio acordado: $120
+                </p>
+                </div>
+
+                <span class="badge">En negociación</span>
+
+                <a href="serviceDetail.html" class="btn btn-secondary btn-sm">
+                Ver detalle del servicio
+                </a>
+            </div>
+            </section>
+
+
+      </main>
+
+    </div>
+  </div>
+</body>
+</html>

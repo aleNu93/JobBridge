@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JobBridge | Mi perfil</title>
+  <link rel="stylesheet" href="../CSS/main.css" />
+</head>
+
+<body class="role-client"><!-- o role-freelancer -->
+  <div class="app-shell">
+
+    <!-- Sidebar -->
+    <aside class="sidebar" aria-label="Menú lateral">
+        <div class="sidebar-inner">
+          <div class="brand">
+            <div class="brand-logo brand-logo--plain" aria-hidden="true">
+              <img src="../IMAGES/JobBridgeLogo.png" alt="" />
+            </div>
+
+            <div class="brand-title">
+              <strong>JobBridge</strong>
+              <span>Panel PYME</span>
+            </div>
+
+            <button
+              class="sidebar-toggle"
+              type="button"
+              aria-label="Colapsar sidebar"
+            >
+              ☰
+            </button>
+          </div>
+
+          <nav class="nav" aria-label="Navegación principal">
+            <div class="nav-section-title">Principal</div>
+
+            <a class="nav-item" href="dashboardPYME.html">
+              <span class="nav-icon" aria-hidden="true">🏠</span>
+              <span class="nav-text">
+                <strong>Dashboard</strong>
+                <span>Resumen general</span>
+              </span>
+            </a>
+
+            <a
+              class="nav-item active"
+              href="exploreServices.html"
+              aria-current="page"
+            >
+              <span class="nav-icon" aria-hidden="true">🔎</span>
+              <span class="nav-text">
+                <strong>Explorar servicios</strong>
+                <span>Catálogo disponible</span>
+              </span>
+            </a>
+
+            <a class="nav-item" href="myContracts.html">
+              <span class="nav-icon" aria-hidden="true">📄</span>
+              <span class="nav-text">
+                <strong>Mis contratos</strong>
+                <span>Activos e historial</span>
+              </span>
+            </a>
+
+            <a class="nav-item" href="profile.html">
+              <span class="nav-icon" aria-hidden="true">👤</span>
+              <span class="nav-text">
+                <strong>Perfil</strong>
+                <span>Datos de la empresa</span>
+              </span>
+            </a>
+          </nav>
+
+          <div class="sidebar-footer" aria-label="Usuario">
+            <div class="user-pill">
+              <div class="avatar" aria-hidden="true"></div>
+              <div class="user-meta">
+                <strong>Empresa Demo</strong>
+                <span>PYME</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+    <!-- Main -->
+    <div class="main">
+
+      <header class="topbar">
+        <div class="page-title">
+          <h1>Mi perfil</h1>
+          <p>Información de tu cuenta</p>
+        </div>
+
+        <div class="topbar-right">
+          <button class="btn btn-secondary btn-sm">Editar perfil</button>
+        </div>
+      </header>
+
+      <main class="content">
+        <!-- contenido -->
+         <section class="panel">
+        <div class="inline">
+            <div class="avatar" style="width:64px;height:64px"></div>
+
+            <div>
+            <h2 style="margin:0">Empresa Demo</h2>
+            <p class="muted">PYME · Cuenta activa</p>
+            </div>
+
+            <span class="badge success">Verificada</span>
+        </div>
+        </section>
+        <div class="grid" style="grid-template-columns: 1fr 1fr; gap:14px">
+        <section class="panel">
+        <div class="stack-12">
+            <strong>Información general</strong>
+
+            <ul style="margin:0;padding-left:18px;color:var(--text-2)">
+            <li><strong>Email:</strong> empresa@mail.com</li>
+            <li><strong>Ubicación:</strong> México</li>
+            <li><strong>Tipo de cuenta:</strong> PYME</li>
+            <li><strong>Miembro desde:</strong> Marzo 2026</li>
+            </ul>
+        </div>
+        </section>
+        <section class="panel">
+        <div class="stack-12">
+            <strong>Datos de la empresa</strong>
+
+            <ul style="margin:0;padding-left:18px;color:var(--text-2)">
+            <li><strong>Nombre comercial:</strong> Empresa Demo</li>
+            <li><strong>Industria:</strong> Tecnología</li>
+            <li><strong>Tamaño:</strong> 5–10 empleados</li>
+            </ul>
+        </div>
+        </section>
+        <section class="panel">
+        <div class="stack-12">
+            <strong>Habilidades</strong>
+
+            <div class="inline">
+            <span class="pill">Diseño UI</span>
+            <span class="pill">Figma</span>
+            <span class="pill">Branding</span>
+            </div>
+        </div>
+        </section>
+        <section class="panel">
+        <strong>Contratos recientes</strong>
+
+        <table class="table">
+            <tr>
+            <th>Servicio</th>
+            <th>Freelancer</th>
+            <th>Estado</th>
+            </tr>
+            <tr>
+            <td>Diseño de logotipo</td>
+            <td>Alex Rivera</td>
+            <td><span class="badge">En curso</span></td>
+            </tr>
+        </table>
+        </section>
+        <section class="panel">
+        <strong>Mis servicios</strong>
+
+        <table class="table">
+            <tr>
+            <th>Servicio</th>
+            <th>Precio</th>
+            <th>Estado</th>
+            </tr>
+            <tr>
+            <td>Diseño de logotipo</td>
+            <td>$120</td>
+            <td><span class="badge success">Activo</span></td>
+            </tr>
+        </table>
+        </section>
+
+      </main>
+
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JobBridge | Dashboard Freelancer</title>
+    <link rel="stylesheet" href="../CSS/main.css" />
+  </head>
+
+  <body class="role-freelancer">
+    <div class="app-shell">
+      <!-- Sidebar -->
+      <aside class="sidebar" aria-label="Menú lateral">
+        <div class="sidebar-inner">
+          <div class="brand">
+            <div class="brand-logo brand-logo--plain" aria-hidden="true">
+              <img src="../IMAGES/JobBridgeLogo.png" alt="" />
+            </div>
+
+            <div class="brand-title">
+              <strong>JobBridge</strong>
+              <span>Panel Freelancer</span>
+            </div>
+
+            <button class="sidebar-toggle" type="button" aria-label="Colapsar sidebar">☰</button>
+          </div>
+
+          <nav class="nav" aria-label="Navegación principal">
+            <div class="nav-section-title">Principal</div>
+
+            <a class="nav-item active" href="dashboardFreelancer.html" aria-current="page">
+              <span class="nav-icon" aria-hidden="true">🏠</span>
+              <span class="nav-text">
+                <strong>Dashboard</strong>
+                <span>Resumen de actividad</span>
+              </span>
+            </a>
+
+            <a class="nav-item" href="myServices.html">
+              <span class="nav-icon" aria-hidden="true">🧰</span>
+              <span class="nav-text">
+                <strong>Mis servicios</strong>
+                <span>Publicados y borradores</span>
+              </span>
+            </a>
+
+            <a class="nav-item" href="myRequests.html">
+              <span class="nav-icon" aria-hidden="true">📥</span>
+              <span class="nav-text">
+                <strong>Solicitudes</strong>
+                <span>Entrantes y estado</span>
+              </span>
+            </a>
+
+            <a class="nav-item" href="myContracts.html">
+              <span class="nav-icon" aria-hidden="true">📄</span>
+              <span class="nav-text">
+                <strong>Contratos</strong>
+                <span>Activos e historial</span>
+              </span>
+            </a>
+
+            <a class="nav-item" href="profile.html">
+              <span class="nav-icon" aria-hidden="true">👤</span>
+              <span class="nav-text">
+                <strong>Perfil</strong>
+                <span>Datos y portafolio</span>
+              </span>
+            </a>
+          </nav>
+
+          <div class="sidebar-footer" aria-label="Usuario">
+            <div class="user-pill">
+              <div class="avatar" aria-hidden="true"></div>
+              <div class="user-meta">
+                <strong>Freelancer Demo</strong>
+                <span>Freelancer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main -->
+      <div
+        class="main"
+        style="
+          background-image: url('../IMAGES/fondodashboardfreelancer.png');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        "
+      >
+        <header class="topbar" aria-label="Barra superior">
+          <div class="topbar-left">
+            <div class="page-title">
+              <h1>Dashboard</h1>
+              <p>Resumen de tu actividad en JobBridge</p>
+            </div>
+          </div>
+
+          <div class="topbar-right">
+            <a class="btn btn-primary btn-sm" href="createService.html">Crear servicio</a>
+            <a class="btn btn-secondary btn-sm" href="myRequests.html">Ver solicitudes</a>
+          </div>
+        </header>
+
+        <main class="content">
+          <section class="panel" aria-label="Bienvenida">
+            <div class="stack-8">
+              <h2 style="font-size: 16px; margin: 0;">Bienvenido, Freelancer</h2>
+              <p class="muted">
+                Aquí tienes un resumen rápido. Los valores son de ejemplo y se conectarán al backend más adelante.
+              </p>
+            </div>
+          </section>
+
+          <section style="margin-top: 14px" aria-label="Indicadores">
+            <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: 14px">
+              <div class="card">
+                <div class="card-body">
+                  <div class="stack-8">
+                    <span class="badge">Servicios</span>
+                    <strong style="font-size: 20px">4</strong>
+                    <span class="muted" style="font-size: 12px">Activos</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <div class="stack-8">
+                    <span class="badge">Solicitudes</span>
+                    <strong style="font-size: 20px">2</strong>
+                    <span class="muted" style="font-size: 12px">Nuevas</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <div class="stack-8">
+                    <span class="badge">Ingresos</span>
+                    <strong style="font-size: 20px">$1,200</strong>
+                    <span class="muted" style="font-size: 12px">Este mes</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p class="help" style="margin-top: 10px">
+              Nota: la visualización de ingresos es referencial en el alcance académico.
+            </p>
+          </section>
+
+          <section style="margin-top: 14px" aria-label="Acciones rápidas">
+            <div class="panel">
+              <div class="inline" style="margin-bottom: 10px">
+                <div>
+                  <h2 style="font-size: 16px; margin: 0;">Acciones rápidas</h2>
+                  <p class="muted" style="font-size: 12px">Atajos a las tareas más frecuentes</p>
+                </div>
+                <span class="badge">Freelancer</span>
+              </div>
+
+              <div class="inline" style="justify-content: flex-start; gap: 10px; flex-wrap: wrap">
+                <a class="btn btn-primary" href="createService.html">Crear nuevo servicio</a>
+                <a class="btn btn-secondary" href="myServices.html">Administrar servicios</a>
+                <a class="btn btn-ghost" href="myRequests.html">Revisar solicitudes</a>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
